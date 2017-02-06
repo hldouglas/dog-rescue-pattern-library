@@ -6,10 +6,10 @@
   --color-neutral-beige: #ccc;
   --color-whatever: #60b5ed;
 
-  --font-primary: "PT Sans", sans-serif;
-  --font-secondary: "PT Serif", serif;
+  --font-primary: "ff-tisa-sans-web-pro", sans-serif;
+  --font-secondary: "ff-tisa-web-pro", serif;
 }
 
-html {
+h1 {
   font-family: var(--font-primary);
 }
