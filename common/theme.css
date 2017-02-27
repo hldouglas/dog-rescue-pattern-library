@@ -10,6 +10,10 @@
   --font-secondary: "ff-tisa-web-pro", serif;
 }
 
-h1 {
+h1, h2 {
   font-family: var(--font-primary);
+}
+
+p {
+  font-family: var(--font-secondary);
 }

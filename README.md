@@ -1,6 +1,6 @@
 ---
 name: "Karen Douglas Consulting"
-fontURL: "https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif"
+typekit: "caz8nay=ff-tisa-web-pro:400,400i,700,700i|ff-tisa-sans-web-pro:400,400i,700,700i"
 fonts:
   primary: |
     The primary typeface represents a modern and approachable look for the company's image.
