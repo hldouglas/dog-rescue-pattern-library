@@ -1,19 +1,19 @@
 :root {
   --color-primary: #2d2926;
   --color-primary-light: #fff;
-  --color-secondary: #949494;
-  --color-accent: #671e75;
-  --color-neutral-beige: #ccc;
-  --color-whatever: #60b5ed;
+  --color-secondary: #969493;
+  --color-accent-primary: #671e75;
+  --color-neutral-blue: #344a7b;
+  --color-accent-secondary: #007681;
 
   --font-primary: "ff-tisa-sans-web-pro", sans-serif;
   --font-secondary: "ff-tisa-web-pro", serif;
 }
 
-h1, h2 {
-  font-family: var(--font-primary);
+html {
+  font-family: var(--font-secondary);
 }
 
-p {
-  font-family: var(--font-secondary);
+h1, h2, h3, h4, h5, h6, a{
+  font-family: var(--font-primary);
 }

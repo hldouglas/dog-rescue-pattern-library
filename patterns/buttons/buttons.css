@@ -1,15 +1,17 @@
 .btn {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
+  border-radius: 11px;
 
-  color: #fff;
+  color: var(--color-primary-light);
+  font-family: var(--font-primary);
 }
 
 .btn-light {
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
 
-  color: #fff;
+  color: var(--color-primary);
 }
 
 .btn-ghost {
@@ -17,4 +19,21 @@
   border-color: var(--color-primary);
 
   color: var(--color-primary);
+}
+
+.btn:hover {
+  background-color: var(--color-accent-primary);
+  border-color: var(--color-accent-primary);
+}
+
+.btn-light:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+
+  color: var(--color-accent-primary);
+}
+
+.btn-ghost:hover {
+  background-color: transparent;
+  border-color: var(--color-accent-primary);
 }
