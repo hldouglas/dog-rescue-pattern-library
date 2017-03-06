@@ -28,7 +28,3 @@
 .is-validated input:invalid + label + .error-message {
   display: block;
 }
-
-.label {
-  padding: .5em;
-}
