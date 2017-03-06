@@ -67,6 +67,19 @@
     </div>
 
     <div class="push-1-2">
+      <label for="court">When and what is the nature of the next court appearance?</label>
+      <input type="checkbox" name="court" value="c-conference" id="c-conference"><label for="c-conference">Case Conference</label>
+      <input type="checkbox" name="court" value="s-conference" id="s-conference"><label for="s-conference">Settlement Conference</label>
+      <input type="checkbox" name="court" value="motion" id="motion"><label for="motion">Motion</label>
+      <input type="checkbox" name="court" value="tm-conference" id="tm-conference"><label for="tm-conference">Trail Management Conference</label>
+      <input type="checkbox" name="court" value="trial" id="trial"><label for="trial">Trail</label>
+      <p class="error-message milli island-1-4 push-0" id="court-error">
+        <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">Please identify if you are the applicant or respondant</span>
+      </p>
+    </div>
+
+    <div class="push-1-2">
       <input type="checkbox" id="agree" required aria-describedby="agree-error">
       <label for="agree">I agree that the information I have provided is truthful and will be used as a method to get in contact with Karen Douglas</label>
       <p class="error-message milli island-1-4 push-0" id="agree-error">
