@@ -770,7 +770,7 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;form class="max-length island" method="post" novalidate=""&gt;
+              <code><pre>&lt;form method="post" novalidate=""&gt;
   &lt;div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
     &lt;h3 class="push-0">
         &lt;i class="icon i-32">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
@@ -778,94 +778,132 @@
       &lt;/h3>
   &lt;/div>
 
-  &lt;fieldset>
-    &lt;legend class="push">Information about you&lt;/legend>
-    &lt;div class="push">
-      &lt;label class="push-1-2" for="name">Your full legal name:&lt;/label>
-      &lt;input id="name" required aria-describedby="name-error">
-      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
-        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-        &lt;span class="icon-label">Please provide your full legal name&lt;/span>
-      &lt;/p>
-    &lt;/div>
+  &lt;fieldset class="push-0">
+    &lt;legend class="pad-t pad-b push">
+      &lt;div class="gutter max-length">Information about you&lt;/div>
+    &lt;/legend>
+    &lt;div class="max-length gutter">
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="name">Your full legal name:&lt;/label>
+        &lt;input id="name" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please provide your full legal name&lt;/span>
+        &lt;/p>
+      &lt;/div>
 
-    &lt;div class="push">
-      &lt;label class="push-1-2" for="tel">Your telephone number:&lt;/label>
-      &lt;input id="tel" required aria-describedby="tel-error">
-      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
-        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-        &lt;span class="icon-label">Please provide your telephone number&lt;/span>
-      &lt;/p>
-    &lt;/div>
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="tel">Your telephone number:&lt;/label>
+        &lt;input id="tel" required aria-describedby="tel-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please provide your telephone number&lt;/span>
+        &lt;/p>
+      &lt;/div>
 
-    &lt;div class="push">
-      &lt;label class="push-1-2" for="email">Your email address:&lt;/label>
-      &lt;input type="email" id="email" required aria-describedby="email-error">
-      &lt;p class="error-message milli island-1-4 push-0" id="email-error">
-        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-        &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
-      &lt;/p>
-    &lt;/div>
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="email">Your email address:&lt;/label>
+        &lt;input type="email" id="email" required aria-describedby="email-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="email-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
+        &lt;/p>
+      &lt;/div>
 
-    &lt;div class="push">
-      &lt;label class="push-1-2" for="address">Your current address:&lt;/label>
-      &lt;input type="text" id="address" required aria-describedby="address-error">
-      &lt;p class="error-message milli island-1-4 push-0" id="address-error">
-        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-        &lt;span class="icon-label">Please enter your current address&lt;/span>
-      &lt;/p>
-    &lt;/div>
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="address">Your current address:&lt;/label>
+        &lt;input type="text" id="address" required aria-describedby="address-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="address-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please enter your current address&lt;/span>
+        &lt;/p>
+      &lt;/div>
 
-    &lt;div class="push">
-      &lt;label class="push-1-2" for="identify">You are the:&lt;/label>
-      &lt;input type="radio" name="identify" value="applicant" id="applicant">
-      &lt;label for="applicant">Applicant&lt;/label>
-      &lt;input type="radio" name="identify" value="respondant" id="respondant">
-      &lt;label for="respondant">Respondant&lt;/label>
-      &lt;p class="error-message milli island-1-4 push-0" id="identify-error">
-        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-        &lt;span class="icon-label">Please identify if you are the applicant or respondant&lt;/span>
-      &lt;/p>
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="identify">You are the:&lt;/label>
+        &lt;ul class="list-group-inline">
+          &lt;li>
+            &lt;input type="radio" name="identify" value="applicant" id="applicant">
+            &lt;label for="applicant">Applicant&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="radio" name="identify" value="respondant" id="respondant">
+            &lt;label for="respondant">Respondant&lt;/label>
+          &lt;/li>
+        &lt;/ul>
+        &lt;p class="error-message milli island-1-4 push-0" id="identify-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please identify if you are the applicant or respondant&lt;/span>
+        &lt;/p>
+      &lt;/div>
     &lt;/div>
   &lt;/fieldset>
 
-  &lt;div class="push">
-    &lt;label class="push-1-2" for="relationship">What is your current relationship with the other party in this matter?&lt;/label>
-    &lt;textarea id="relationship" required aria-describedby="relationship-error">&lt;/textarea>
-    &lt;p class="error-message milli island-1-4 push-0" id="address-error">
-      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-      &lt;span class="icon-label">Please enter your current address&lt;/span>
-    &lt;/p>
+  &lt;fieldset class="push-0">
+    &lt;legend class="pad-t pad-b push">
+      &lt;div class="gutter max-length">Describe your relationship with the other party&lt;/div>
+    &lt;/legend>
+    &lt;div class="max-length gutter">
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="relationship">What is your current relationship with the other party in this matter?&lt;/label>
+        &lt;textarea id="relationship" required aria-describedby="relationship-error">&lt;/textarea>
+        &lt;p class="error-message milli island-1-4 push-0" id="address-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please enter your current address&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+  &lt;/fieldset>
+
+  &lt;fieldset class="push-0">
+    &lt;legend class="pad-t pad-b push">
+      &lt;div class="gutter max-length">Describe the issues in the dispute with the other party&lt;/div>
+    &lt;/legend>
+    &lt;div class="max-length gutter">
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="court">When and what is the nature of the next court appearance?&lt;/label>
+        &lt;ul class="list-group-inline">
+          &lt;li>
+            &lt;input type="checkbox" name="court" value="c-conference" id="c-conference">
+            &lt;label for="c-conference">Case Conference&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="checkbox" name="court" value="s-conference" id="s-conference">
+            &lt;label for="s-conference">Settlement Conference&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="checkbox" name="court" value="motion" id="motion">
+            &lt;label for="motion">Motion&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="checkbox" name="court" value="tm-conference" id="tm-conference">
+            &lt;label for="tm-conference">Trail Management Conference&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="checkbox" name="court" value="trial" id="trial">
+            &lt;label for="trial">Trail&lt;/label>
+          &lt;/li>
+        &lt;/ul>
+        &lt;p class="error-message milli island-1-4 push-0" id="court-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please identify if you are the applicant or respondant&lt;/span>
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+  &lt;/fieldset>
+
+  &lt;div class="max-length gutter">
+    &lt;div class="push-1-2">
+      &lt;input type="checkbox" id="agree" required aria-describedby="agree-error">
+      &lt;label for="agree">I agree that the information I have provided is truthful and will be used as a method to get in contact with Karen Douglas&lt;/label>
+      &lt;p class="error-message milli island-1-4 push-0" id="agree-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Please agree that the information is truthful and may be used by Karen Douglas&lt;/span>
+      &lt;/p>
+    &lt;/div>
   &lt;/div>
 
-  &lt;div class="push">
-    &lt;label class="push-1-2" for="court">When and what is the nature of the next court appearance?&lt;/label>
-    &lt;input type="checkbox" name="court" value="c-conference" id="c-conference">
-    &lt;label for="c-conference">Case Conference&lt;/label>
-    &lt;input type="checkbox" name="court" value="s-conference" id="s-conference">
-    &lt;label for="s-conference">Settlement Conference&lt;/label>
-    &lt;input type="checkbox" name="court" value="motion" id="motion">
-    &lt;label for="motion">Motion&lt;/label>
-    &lt;input type="checkbox" name="court" value="tm-conference" id="tm-conference">
-    &lt;label for="tm-conference">Trail Management Conference&lt;/label>
-    &lt;input type="checkbox" name="court" value="trial" id="trial">
-    &lt;label for="trial">Trail&lt;/label>
-    &lt;p class="error-message milli island-1-4 push-0" id="court-error">
-      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-      &lt;span class="icon-label">Please identify if you are the applicant or respondant&lt;/span>
-    &lt;/p>
-  &lt;/div>
-
-  &lt;div class="push-1-2">
-    &lt;input type="checkbox" id="agree" required aria-describedby="agree-error">
-    &lt;label for="agree">I agree that the information I have provided is truthful and will be used as a method to get in contact with Karen Douglas&lt;/label>
-    &lt;p class="error-message milli island-1-4 push-0" id="agree-error">
-      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-      &lt;span class="icon-label">Please agree that the information is truthful and may be used by Karen Douglas&lt;/span>
-    &lt;/p>
-  &lt;/div>
-
-  &lt;div class="pad-t-1-2 center-contents">
+  &lt;div class="pad-t-1-2 center-contents push">
     &lt;button class="btn" type="submit">Submit&lt;/button>
   &lt;/div>
 &lt;/form>
