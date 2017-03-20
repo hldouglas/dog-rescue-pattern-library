@@ -1,3 +1,4 @@
-.nav {
+.main-nav {
   background-color: var(--color-accent-primary);
+  display: block;
 }
