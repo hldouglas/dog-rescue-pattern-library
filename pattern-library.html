@@ -823,11 +823,11 @@
         &lt;label class="push-1-2" for="identify">You are the:&lt;/label>
         &lt;ul class="list-group-inline">
           &lt;li>
-            &lt;input type="radio" name="identify" value="applicant" id="applicant">
+            &lt;input type="radio" name="identify" value="applicant" id="applicant" required>
             &lt;label for="applicant">Applicant&lt;/label>
           &lt;/li>
           &lt;li>
-            &lt;input type="radio" name="identify" value="respondant" id="respondant">
+            &lt;input type="radio" name="identify" value="respondant" id="respondant" required>
             &lt;label for="respondant">Respondant&lt;/label>
           &lt;/li>
         &lt;/ul>
@@ -849,19 +849,19 @@
         &lt;textarea id="relationship" required aria-describedby="relationship-error">&lt;/textarea>
         &lt;p class="error-message milli island-1-4 push-0" id="address-error">
           &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-          &lt;span class="icon-label">Please enter your current address&lt;/span>
+          &lt;span class="icon-label">Please input a brief summary of your current realtionship with the other party&lt;/span>
         &lt;/p>
       &lt;/div>
     &lt;/div>
   &lt;/fieldset>
 
-  &lt;fieldset class="push-0">
+  &lt;fieldset class="push-0 require-1">
     &lt;legend class="pad-t pad-b push">
       &lt;div class="gutter max-length">Describe the issues in the dispute with the other party&lt;/div>
     &lt;/legend>
     &lt;div class="max-length gutter">
       &lt;div class="push">
-        &lt;label class="push-1-2" for="court">When and what is the nature of the next court appearance?&lt;/label>
+        &lt;label class="push-1-2" for="court">What is the nature of the next court appearance?&lt;/label>
         &lt;ul class="list-group-inline">
           &lt;li>
             &lt;input type="checkbox" name="court" value="c-conference" id="c-conference">
@@ -886,8 +886,108 @@
         &lt;/ul>
         &lt;p class="error-message milli island-1-4 push-0" id="court-error">
           &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-          &lt;span class="icon-label">Please identify if you are the applicant or respondant&lt;/span>
+          &lt;span class="icon-label">Please select one of the following options&lt;/span>
         &lt;/p>
+      &lt;/div>
+    &lt;/div>
+  &lt;/fieldset>
+
+  &lt;fieldset class="push-0">
+    &lt;legend class="pad-t pad-b push">
+      &lt;div class="gutter max-length">Tell me about your children&lt;/div>
+    &lt;/legend>
+    &lt;div class="max-length gutter">
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="name">Your child&apos;s full legal name:&lt;/label>
+        &lt;input id="name" required aria-describedby="name-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please provide your child&apos;s full legal name&lt;/span>
+        &lt;/p>
+      &lt;/div>
+
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="date">Your child&apos;s date of birth:&lt;/label>
+        &lt;ul class="list-group-inline center-contents-horizontal">
+          &lt;li>
+            &lt;select name="day">
+              &lt;option value="01">01&lt;/option>
+              &lt;option value="02">02&lt;/option>
+              &lt;option value="03">03&lt;/option>
+              &lt;option value="04">04&lt;/option>
+              &lt;option value="05">05&lt;/option>
+              &lt;option value="06">06&lt;/option>
+              &lt;option value="07">07&lt;/option>
+              &lt;option value="08">08&lt;/option>
+              &lt;option value="09">09&lt;/option>
+              &lt;option value="10">10&lt;/option>
+              &lt;option value="11">11&lt;/option>
+              &lt;option value="12">12&lt;/option>
+              &lt;option value="13">13&lt;/option>
+              &lt;option value="14">14&lt;/option>
+              &lt;option value="15">15&lt;/option>
+              &lt;option value="16">16&lt;/option>
+              &lt;option value="17">17&lt;/option>
+              &lt;option value="18">18&lt;/option>
+              &lt;option value="19">19&lt;/option>
+              &lt;option value="20">20&lt;/option>
+              &lt;option value="21">21&lt;/option>
+              &lt;option value="22">22&lt;/option>
+              &lt;option value="23">23&lt;/option>
+              &lt;option value="24">24&lt;/option>
+              &lt;option value="25">25&lt;/option>
+              &lt;option value="26">26&lt;/option>
+              &lt;option value="27">27&lt;/option>
+              &lt;option value="28">28&lt;/option>
+              &lt;option value="29">29&lt;/option>
+              &lt;option value="30">30&lt;/option>
+              &lt;option value="31">31&lt;/option>
+            &lt;/select>
+          &lt;/li>
+          &lt;li>
+            &lt;select name="month">
+              &lt;option value="january">January&lt;/option>
+              &lt;option value="february">February&lt;/option>
+              &lt;option value="march">March&lt;/option>
+              &lt;option value="april">April&lt;/option>
+              &lt;option value="may">May&lt;/option>
+              &lt;option value="june">June&lt;/option>
+              &lt;option value="july">July&lt;/option>
+              &lt;option value="august">August&lt;/option>
+              &lt;option value="september">September&lt;/option>
+              &lt;option value="october">October&lt;/option>
+              &lt;option value="november">November&lt;/option>
+              &lt;option value="december">December&lt;/option>
+            &lt;/select>
+          &lt;/li>
+          &lt;li>
+            &lt;select name="year">
+              &lt;option value="2017">2017&lt;/option>
+              &lt;option value="2016">2016&lt;/option>
+              &lt;option value="2015">2015&lt;/option>
+              &lt;option value="2014">2014&lt;/option>
+              &lt;option value="2013">2013&lt;/option>
+              &lt;option value="2012">2012&lt;/option>
+              &lt;option value="2011">2011&lt;/option>
+              &lt;option value="2010">2010&lt;/option>
+              &lt;option value="2009">2009&lt;/option>
+              &lt;option value="2008">2008&lt;/option>
+              &lt;option value="2007">2007&lt;/option>
+              &lt;option value="2006">2006&lt;/option>
+              &lt;option value="2005">2005&lt;/option>
+              &lt;option value="2004">2004&lt;/option>
+              &lt;option value="2003">2003&lt;/option>
+              &lt;option value="2002">2002&lt;/option>
+              &lt;option value="2001">2001&lt;/option>
+              &lt;option value="2000">2000&lt;/option>
+              &lt;option value="1999">1999&lt;/option>
+            &lt;/select>
+          &lt;/li>
+          &lt;p class="error-message milli island-1-4 push-0" id="date-error">
+            &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+            &lt;span class="icon-label">One or more fields weren&apos;t selected&lt;/span>
+          &lt;/p>
+        &lt;/ul>
       &lt;/div>
     &lt;/div>
   &lt;/fieldset>
