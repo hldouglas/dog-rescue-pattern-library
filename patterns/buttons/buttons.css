@@ -21,6 +21,12 @@
   color: var(--color-primary);
 }
 
+.round-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+}
+
 .btn:hover {
   background-color: var(--color-accent-primary);
   border-color: var(--color-accent-primary);

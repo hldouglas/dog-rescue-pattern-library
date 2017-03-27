@@ -661,6 +661,7 @@
               <code><pre>&lt;a class="btn" href="#"&gt;Standard button&lt;/a>
 &lt;a class="btn btn-light" href="#">Light button&lt;/a>
 &lt;a class="btn btn-ghost" href="#">Ghost button&lt;/a>
+&lt;a class="btn round-btn" href="#">Round button&lt;/a>
 </pre></code>
             </div>
           </div>
@@ -969,9 +970,9 @@
             &lt;/p>
           &lt;/div>
 
-          &lt;div class="push">
+          &lt;div class="push-1-2">
             &lt;label class="push-1-2" for="date">Your child&apos;s date of birth:&lt;/label>
-            &lt;ul class="list-group-inline center-contents-horizontal">
+            &lt;ul class="list-group-inline center-contents-horizontal push-0">
               &lt;li>
                 &lt;select name="day[]">
                   &lt;option value="01">01&lt;/option>
@@ -1025,25 +1026,25 @@
               &lt;/li>
               &lt;li>
                 &lt;select name="year[]">
-                  &lt;option value="2017">2017&lt;/option>
-                  &lt;option value="2016">2016&lt;/option>
-                  &lt;option value="2015">2015&lt;/option>
-                  &lt;option value="2014">2014&lt;/option>
-                  &lt;option value="2013">2013&lt;/option>
-                  &lt;option value="2012">2012&lt;/option>
-                  &lt;option value="2011">2011&lt;/option>
-                  &lt;option value="2010">2010&lt;/option>
-                  &lt;option value="2009">2009&lt;/option>
-                  &lt;option value="2008">2008&lt;/option>
-                  &lt;option value="2007">2007&lt;/option>
-                  &lt;option value="2006">2006&lt;/option>
-                  &lt;option value="2005">2005&lt;/option>
-                  &lt;option value="2004">2004&lt;/option>
-                  &lt;option value="2003">2003&lt;/option>
-                  &lt;option value="2002">2002&lt;/option>
-                  &lt;option value="2001">2001&lt;/option>
-                  &lt;option value="2000">2000&lt;/option>
                   &lt;option value="1999">1999&lt;/option>
+                  &lt;option value="2000">2000&lt;/option>
+                  &lt;option value="2001">2001&lt;/option>
+                  &lt;option value="2002">2002&lt;/option>
+                  &lt;option value="2003">2003&lt;/option>
+                  &lt;option value="2004">2004&lt;/option>
+                  &lt;option value="2005">2005&lt;/option>
+                  &lt;option value="2006">2006&lt;/option>
+                  &lt;option value="2007">2007&lt;/option>
+                  &lt;option value="2008">2008&lt;/option>
+                  &lt;option value="2009">2009&lt;/option>
+                  &lt;option value="2010">2010&lt;/option>
+                  &lt;option value="2011">2011&lt;/option>
+                  &lt;option value="2012">2012&lt;/option>
+                  &lt;option value="2013">2013&lt;/option>
+                  &lt;option value="2014">2014&lt;/option>
+                  &lt;option value="2015">2015&lt;/option>
+                  &lt;option value="2016">2016&lt;/option>
+                  &lt;option value="2017">2017&lt;/option>
                 &lt;/select>
               &lt;/li>
               &lt;p class="error-message milli island-1-4 push-0" id="date-error">
@@ -1054,9 +1055,13 @@
           &lt;/div>
         &lt;/div>
       &lt;/div>
-      &lt;div>
-        &lt;button id="add-btn" class="btn">+&lt;/button>
-        &lt;button id="minus-btn" class="btn" hidden>-&lt;/button>
+      &lt;div class="push center-contents-horizontal">
+        &lt;div class="gutter-1-4">
+          &lt;button id="add-btn" class="btn round-btn">+&lt;/button>
+        &lt;/div>
+        &lt;div class="gutter-1-4">
+          &lt;button id="minus-btn" class="btn round-btn" hidden>-&lt;/button>
+        &lt;/div>
       &lt;/div>
     &lt;/div>
   &lt;/fieldset>
