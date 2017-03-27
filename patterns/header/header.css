@@ -1,3 +1,30 @@
 header {
   background-color: var(--color-accent-primary);
 }
+
+@media only screen and (min-width: 38em) {
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  img {
+    width: 56px;
+    height: 56px;
+  }
+
+}
