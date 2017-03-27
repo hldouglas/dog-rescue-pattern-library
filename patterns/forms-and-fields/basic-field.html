@@ -111,9 +111,11 @@
     <fieldset class="push-0">
       <legend class="pad-t pad-b push"><div class="gutter max-length">Tell me about your children</div></legend>
       <div class="max-length gutter">
+        <div id="new-child">
+          <div class="child-group">
         <div class="push">
           <label class="push-1-2" for="name">Your child's full legal name:</label>
-          <input id="name" required aria-describedby="name-error">
+          <input id="name[]" required aria-describedby="name-error">
           <p class="error-message milli island-1-4 push-0" id="name-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please provide your child's full legal name</span>
@@ -123,7 +125,7 @@
         <div class="push">
           <label class="push-1-2" for="date">Your child's date of birth:</label>
           <ul class="list-group-inline center-contents-horizontal">
-            <li><select name="day">
+            <li><select name="day[]">
               <option value="01">01</option>
               <option value="02">02</option>
               <option value="03">03</option>
@@ -156,7 +158,7 @@
               <option value="30">30</option>
               <option value="31">31</option>
             </select></li>
-            <li><select name="month">
+            <li><select name="month[]">
               <option value="january">January</option>
               <option value="february">February</option>
               <option value="march">March</option>
@@ -170,7 +172,7 @@
               <option value="november">November</option>
               <option value="december">December</option>
             </select></li>
-            <li><select name="year">
+            <li><select name="year[]">
               <option value="2017">2017</option>
               <option value="2016">2016</option>
               <option value="2015">2015</option>
@@ -197,6 +199,12 @@
           </p>
         </div>
       </div>
+      </div>
+        <div>
+        <button id="add-btn" class="btn">+</button>
+        <button id="minus-btn" class="btn" hidden>-</button>
+      </div>
+      </div>
     </fieldset>
 
     <div class="max-length gutter">
@@ -214,6 +222,25 @@
       <button class="btn" type="submit">Submit</button>
     </div>
   </form>
+
+  <script>
+  var newChild = document.getElementById ("new-child");
+  var newChildTemplate = newChild.innerHTML;
+  var addChildBtn = document.getElementById ("add-btn");
+  var minusChildBtn = document.getElementById ("minus-btn");
+  addChildBtn.addEventListener ("click",function(e){
+    e.preventDefault ();
+    newChild.innerHTML += newChildTemplate;
+    minusChildBtn.removeAttribute ("hidden");
+  });
+  minusChildBtn.addEventListener ("click",function(e){
+    e.preventDefault ();
+    newChild.removeChild (newChild.querySelector (".child-group:last-child"));
+    if (newChild.querySelectorAll (".child-group").length <= 1){
+      minusChildBtn.setAttribute ("hidden",true);
+    }
+  });
+  </script>
 
   <script>
     var checkboxes = document.querySelectorAll(".require-1 input");
