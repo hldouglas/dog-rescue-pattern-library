@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Karen Douglas Consulting - Intake Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../common/modules.css" rel="stylesheet">
+  <link href="../common/grid.css" rel="stylesheet">
+  <link href="../common/type.css" rel="stylesheet">
+  <link href="../common/theme.css" rel="stylesheet">
+  <link href="../patterns/buttons/buttons.css" rel="stylesheet">
+  <link href="../patterns/header/header.css" rel="stylesheet">
+  <link href="../patterns/navigation/nav.css" rel="stylesheet">
+  <link href="../patterns/forms-and-fields/field.css" rel="stylesheet">
+  <link href="../patterns/footer/footer.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="pad-t-1-2 gutter-1-4">
+    <h1 class="text-center center-contents-horizontal pad-b-1-2 normal"><img class="push-r-1-2" width="32" height="32" src="../../images/white-logo.svg" />Karen Douglas Consulting</h1>
+  </header>
+
+  <ul class="skip-links">
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#card-nav">Jump to card display of navigation</a></li>
+  </ul>
+
+  <nav class="main-nav" role="navigation" id="nav">
+    <div class="nav wrapper">
+      <div class="grid grid-stretch push-0 pad-b-1-8 pad-t-1-8">
+        <div class="unit unit-xs-1 unit-s-1 unit-m-1-4 unit-l-1-4 unit-xl-1-4">
+          <div class="island-1-2 text-center"><a href="home.html">Home</a></div>
+        </div>
+        <div class="unit unit-xs-1 unit-s-1 unit-m-1-4 unit-l-1-4 unit-xl-1-4">
+          <div class="island-1-2 text-center"><a href="form.html">Intake Form</a></div>
+        </div>
+        <div class="unit unit-xs-1 unit-s-1 unit-m-1-4 unit-l-1-4 unit-xl-1-4">
+          <div class="island-1-2 text-center"><a href="contact.html">Contact</a></div>
+        </div>
+        <div class="unit unit-xs-1 unit-s-1 unit-m-1-4 unit-l-1-4 unit-xl-1-4">
+          <div class="island-1-2 text-center"><a href="faq.html">FAQ</a></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <form method="post" novalidate>
+    <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+      <h3 class="push-0">
+        <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+        <span class="icon-label">There are items that require your attention</span>
+      </h3>
+    </div>
+
+    <fieldset class="push-0">
+      <legend class="pad-t pad-b push"><div class="gutter max-length">Information about you</div></legend>
+      <div class="max-length gutter">
+        <div class="push">
+          <label class="push-1-2" for="name">Your full legal name:</label>
+          <input id="name" required aria-describedby="name-error">
+          <p class="error-message milli island-1-4 push-0" id="name-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide your full legal name</span>
+          </p>
+        </div>
+
+        <div class="push">
+          <label class="push-1-2" for="tel">Your telephone number:</label>
+          <input id="tel" required aria-describedby="tel-error">
+          <p class="error-message milli island-1-4 push-0" id="name-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide your telephone number</span>
+          </p>
+        </div>
+
+        <div class="push">
+          <label class="push-1-2" for="email">Your email address:</label>
+          <input type="email" id="email" required aria-describedby="email-error">
+          <p class="error-message milli island-1-4 push-0" id="email-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide a properly formatted email address</span>
+          </p>
+        </div>
+
+        <div class="push">
+          <label class="push-1-2" for="address">Your current address:</label>
+          <input type="text" id="address" required aria-describedby="address-error">
+          <p class="error-message milli island-1-4 push-0" id="address-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please enter your current address</span>
+          </p>
+        </div>
+
+        <div class="push">
+          <label class="push-1-2" for="identify">You are the:</label>
+          <ul class="list-group-inline">
+            <li><input type="radio" name="identify" value="applicant" id="applicant" required><label for="applicant">Applicant</label></li>
+            <li><input type="radio" name="identify" value="respondant" id="respondant" required><label for="respondant">Respondant</label></li>
+          </ul>
+          <p class="error-message milli island-1-4 push-0" id="identify-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please identify if you are the applicant or respondant</span>
+          </p>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="push-0">
+      <legend class="pad-t pad-b push"><div class="gutter max-length">Describe your relationship with the other party</div></legend>
+      <div class="max-length gutter">
+        <div class="push">
+          <label class="push-1-2" for="relationship">What is your current relationship with the other party in this matter?</label>
+          <textarea id="relationship" required aria-describedby="relationship-error"></textarea>
+          <p class="error-message milli island-1-4 push-0" id="address-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please input a brief summary of your current realtionship with the other party</span>
+          </p>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="push-0 require-1">
+      <legend class="pad-t pad-b push"><div class="gutter max-length">Describe the issues in the dispute with the other party</div></legend>
+      <div class="max-length gutter">
+        <div class="push">
+          <label class="push-1-2" for="court">What is the nature of the next court appearance?</label>
+          <ul class="list-group-inline">
+            <li><input type="checkbox" name="court" value="c-conference" id="c-conference"><label for="c-conference">Case Conference</label></li>
+            <li><input type="checkbox" name="court" value="s-conference" id="s-conference"><label for="s-conference">Settlement Conference</label></li>
+            <li><input type="checkbox" name="court" value="motion" id="motion"><label for="motion">Motion</label></li>
+            <li><input type="checkbox" name="court" value="tm-conference" id="tm-conference"><label for="tm-conference">Trail Management Conference</label></li>
+            <li><input type="checkbox" name="court" value="trial" id="trial"><label for="trial">Trail</label></li>
+          </ul>
+          <p class="error-message milli island-1-4 push-0" id="court-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please select one of the following options</span>
+          </p>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="push-0">
+      <legend class="pad-t pad-b push"><div class="gutter max-length">Tell me about your children</div></legend>
+      <div class="max-length gutter">
+        <div id="new-child">
+          <div class="child-group">
+        <div class="push">
+          <label class="push-1-2" for="name">Your child's full legal name:</label>
+          <input id="name[]" required aria-describedby="name-error">
+          <p class="error-message milli island-1-4 push-0" id="name-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide your child's full legal name</span>
+          </p>
+        </div>
+
+        <div class="push-1-2">
+          <label class="push-1-2" for="date">Your child's date of birth:</label>
+          <ul class="list-group-inline center-contents-horizontal push-0">
+            <li><select name="day[]">
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select></li>
+            <li><select name="month[]">
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="august">August</option>
+              <option value="september">September</option>
+              <option value="october">October</option>
+              <option value="november">November</option>
+              <option value="december">December</option>
+            </select></li>
+            <li><select name="year[]">
+              <option value="1999">1999</option>
+              <option value="2000">2000</option>
+              <option value="2001">2001</option>
+              <option value="2002">2002</option>
+              <option value="2003">2003</option>
+              <option value="2004">2004</option>
+              <option value="2005">2005</option>
+              <option value="2006">2006</option>
+              <option value="2007">2007</option>
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+            </select></li>
+          <p class="error-message milli island-1-4 push-0" id="date-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">One or more fields weren't selected</span>
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="push center-contents-horizontal">
+        <div class="gutter-1-4">
+          <button id="add-btn" class="btn round-btn">+</button>
+        </div>
+        <div class="gutter-1-4">
+          <button id="minus-btn" class="btn round-btn" hidden>-</button>
+        </div>
+      </div>
+      </div>
+    </fieldset>
+
+    <div class="max-length gutter">
+      <div class="push-1-2">
+        <input type="checkbox" id="agree" required aria-describedby="agree-error">
+        <label for="agree">I agree that the information I have provided is truthful and will be used as a method to get in contact with Karen Douglas</label>
+        <p class="error-message milli island-1-4 push-0" id="agree-error">
+          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <span class="icon-label">Please agree that the information is truthful and may be used by Karen Douglas</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="pad-t-1-2 center-contents push">
+      <button class="btn" type="submit">Submit</button>
+    </div>
+  </form>
+
+  <script>
+  var newChild = document.getElementById ("new-child");
+  var newChildTemplate = newChild.innerHTML;
+  var addChildBtn = document.getElementById ("add-btn");
+  var minusChildBtn = document.getElementById ("minus-btn");
+  addChildBtn.addEventListener ("click",function(e){
+    e.preventDefault ();
+    newChild.innerHTML += newChildTemplate;
+    minusChildBtn.removeAttribute ("hidden");
+  });
+  minusChildBtn.addEventListener ("click",function(e){
+    e.preventDefault ();
+    newChild.removeChild (newChild.querySelector (".child-group:last-child"));
+    if (newChild.querySelectorAll (".child-group").length <= 1){
+      minusChildBtn.setAttribute ("hidden",true);
+    }
+  });
+  </script>
+
+  <script>
+    var checkboxes = document.querySelectorAll(".require-1 input");
+    var checkgroup = document.querySelector(".require-1");
+    var form = document.querySelector("form");
+    form.addEventListener ("submit",function(e){
+      var isvalid=false;
+      [].forEach.call(checkboxes,function(input){
+      if (input.checked) isvalid = true;
+      });
+      if (!isvalid){
+        e.preventDefault();
+        checkgroup.classList.add("check-invalid");
+      }
+      else {
+        checkgroup.classList.remove("check-invalid");
+      }
+    });
+  </script>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+  <script src="../../common/typekit.js"></script>
+</body>
+</html>
