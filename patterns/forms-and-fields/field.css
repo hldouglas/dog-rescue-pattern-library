@@ -50,3 +50,11 @@ select {
 .is-validated input:invalid + label + .error-message {
   display: block;
 }
+
+#relation-other {
+  display: none;
+}
+
+#other:checked~#relation-other {
+  display: block;
+}
