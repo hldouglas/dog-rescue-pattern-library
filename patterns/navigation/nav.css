@@ -2,3 +2,11 @@
   background-color: var(--color-accent-primary);
   display: block;
 }
+
+h1 {
+  margin: 0;
+}
+
+.skip-links li {
+  padding: 0;
+}
