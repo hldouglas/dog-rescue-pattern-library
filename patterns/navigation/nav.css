@@ -1,6 +1,10 @@
 .main-nav {
-  background-color: var(--color-accent-primary);
+  background-color: var(--color-secondary);
   display: block;
+}
+
+.main-nav div div div:hover {
+  background-color: var(--color-accent-primary);
 }
 
 h1 {
