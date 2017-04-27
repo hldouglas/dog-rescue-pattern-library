@@ -10,7 +10,7 @@ h1 {
   background:
     linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent) no-repeat center bottom / 100%, 50%,
     url("../../images/banner.jpg") no-repeat center center / cover;
-  padding-top: 55%;
+  padding-top: 25%;
   position: relative;
 }
 
