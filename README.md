@@ -21,4 +21,8 @@ colors:
     The accent colour breaks up the neutral grayscale to highlight important information for the user to focus on. Hovering over buttons and cards
 ---
 
-This is the company introduction-At Karen Douglas Consulting, we are here to help with mediating family disputes.
+Karen Douglas Bio
+
+Karen obtained a Master of Social Work Degree from Carleton University in 2003 and has over seventeen years experience working with children, youth and their families in the areas of parental separation as well as children at risk. Karen has a private practice devoted to supporting families during the challenges of separation, that is both collaborative and solution focused. Throughout her professional career Karen had engaged in continuing education and received numerous trainings including: Family Mediation, Clinical Interviewing of Children, Collaborative Problem Solving, Family Group Conference Facilitation and Voice of Child Reports.
+
+Her menu of service to families include: parenting assessments, voice of child reports, mediation services and parenting consultation/coaching. In addition, Karen is a clinician with the Office of the Children’s Lawyer providing independent custody/access investigations and preparing reports for the court, as well as providing clinical assistance to children’s counsel.
