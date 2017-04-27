@@ -143,14 +143,14 @@
       <legend class="pad-t pad-b push"><div class="gutter max-length">Describe your relationship with the other party</div></legend>
       <div class="max-length gutter">
         <div class="push">
-          <label class="push-1-2" for="relation">What is your current relationship to the other party in the court case?</label>
+          <label class="push-1-2" for="lation">What is your current relationship to the other party in the court case?</label>
           <ul class="list-group-inline">
-            <li><input type="radio" name="relation" value="married" id="married" required><label for="married">Married</label></li>
-            <li><input type="radio" name="relation" value="divorced" id="divorced" required><label for="divorced">Divorced</label></li>
-            <li><input type="radio" name="relation" value="separated" id="separated" required><label for="separated">Separated</label></li>
-            <li><input type="radio" name="relation" value="none" id="none" required><label for="none">Never lived together</label></li>
-            <li><input type="radio" name="relation" value="other" id="other" required><label id ="other-label" for="other">Other (Please specify)</label>
-              <input aria-labelledby="other-label" type="text" name="relation-other" id="relation-other"></li>
+            <li><input type="radio" name="lation" value="married" id="married" required><label for="married">Married</label></li>
+            <li><input type="radio" name="lation" value="divorced" id="divorced" required><label for="divorced">Divorced</label></li>
+            <li><input type="radio" name="lation" value="separated" id="separated" required><label for="separated">Separated</label></li>
+            <li><input type="radio" name="lation" value="none" id="none" required><label for="none">Never lived together</label></li>
+            <li><input type="radio" name="lation" value="other2" id="other2" required><label id ="other2-label" for="other2">Other (Please specify)</label>
+              <input aria-labelledby="other2-label" type="text" name="lation-other2" id="lation-other2"></li>
           </ul>
           <p class="error-message milli island-1-4 push-0" id="identify-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
@@ -387,9 +387,13 @@
 
   <script>
     var otherinput = document.getElementById("relation-other");
+    var otherinput = document.getElementById("lation-other2");
     var other = document.getElementById("other");
+    var other = document.getElementById("other2");
     other.addEventListener ("change", function (){
       otherinput.required = this.checked;
+    other2.addEventListener ("change", function (){
+      other2input.required = this.checked;
     })
   </script>
 
