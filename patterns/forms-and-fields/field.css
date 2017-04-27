@@ -55,6 +55,6 @@ select {
   display: none;
 }
 
-#other:checked~#relation-other {
+#other:checked ~ #relation-other {
   display: block;
 }

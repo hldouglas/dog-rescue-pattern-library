@@ -7,9 +7,7 @@ h1 {
 }
 
 .hero {
-  background:
-    linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent) no-repeat center bottom / 100%, 75%,
-    url("../../images/banner.jpg") no-repeat center center / cover;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent) no-repeat center bottom / 100%, 75%, url("../../images/banner.jpg") no-repeat center center / cover;
   padding-top: 25%;
   position: relative;
 }
