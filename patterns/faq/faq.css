@@ -1,0 +1,16 @@
+.faq-nav {
+  background-color: var(--color-secondary);
+  display: block;
+}
+
+.faq-nav div div div:hover {
+  background-color: var(--color-accent-primary);
+}
+
+h1 {
+  margin: 0;
+}
+
+.skip-links li {
+  padding: 0;
+}
