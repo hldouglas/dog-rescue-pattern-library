@@ -82,7 +82,7 @@
             <li><input type="radio" name="relation" value="other" id="other" required><label id ="other-label" for="other">Other (Please specify)</label>
               <input aria-labelledby="other-label" type="text" name="relation-other" id="relation-other"></li>
           </ul>
-          <p class="error-message milli island-1-4 push-0" id="identify-error">
+          <p class="error-message milli island-1-4 push-0" id="relation-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please identify your relationship to the children</span>
           </p>
@@ -100,7 +100,7 @@
         <div class="push">
           <label class="push-1-2" for="tel">Your telephone number:</label>
           <input id="tel" required aria-describedby="tel-error">
-          <p class="error-message milli island-1-4 push-0" id="name-error">
+          <p class="error-message milli island-1-4 push-0" id="tel-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please provide your telephone number</span>
           </p>
@@ -121,7 +121,7 @@
             <li><input type="radio" name="law" value="yes" id="yes" required><label for="yes">Yes</label></li>
             <li><input type="radio" name="law" value="no" id="no" required><label for="no">No</label></li>
           </ul>
-          <p class="error-message milli island-1-4 push-0" id="identify-error">
+          <p class="error-message milli island-1-4 push-0" id="law-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please identify if you have a lawyer or not</span>
           </p>
@@ -151,7 +151,7 @@
             <li><input type="radio" name="lation" value="other2" id="other2" required><label id ="other2-label" for="other2">Other (Please specify)</label>
               <input aria-labelledby="other2-label" type="text" name="lation-other2" id="lation-other2"></li>
           </ul>
-          <p class="error-message milli island-1-4 push-0" id="identify-error">
+          <p class="error-message milli island-1-4 push-0" id="lation-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please identify your relationship to the other party</span>
           </p>
@@ -178,10 +178,10 @@
         <div class="push">
           <label class="push-1-2" for="law">Are you and the other party currently living in the same house?:</label>
           <ul class="list-group-inline">
-            <li><input type="radio" name="law" value="yes" id="yes" required><label for="yes">Yes</label></li>
-            <li><input type="radio" name="law" value="no" id="no" required><label for="no">No</label></li>
+            <li><input type="radio" name="law2" value="yes2" id="yes2" required><label for="yes2">Yes</label></li>
+            <li><input type="radio" name="law2" value="no2" id="no2" required><label for="no2">No</label></li>
           </ul>
-          <p class="error-message milli island-1-4 push-0" id="identify-error">
+          <p class="error-message milli island-1-4 push-0" id="law2-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please identify if you are or aren't living with the other party</span>
           </p>
@@ -234,8 +234,8 @@
           <div class="child-group">
         <div class="push">
           <label class="push-1-2" for="name">Your child's full legal name:</label>
-          <input id="name[]" required aria-describedby="name-error">
-          <p class="error-message milli island-1-4 push-0" id="name-error">
+          <input id="name[]" required aria-describedby="childname-error">
+          <p class="error-message milli island-1-4 push-0" id="childname-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please provide your child's full legal name</span>
           </p>
@@ -312,6 +312,7 @@
               <option value="2016">2016</option>
               <option value="2017">2017</option>
             </select></li>
+          </ul>
           <p class="error-message milli island-1-4 push-0" id="date-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">One or more fields weren't selected</span>

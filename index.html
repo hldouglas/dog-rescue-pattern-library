@@ -1057,33 +1057,6 @@
       &lt;/div>
 
       &lt;div class="push">
-        &lt;label class="push-1-2" for="tel">Your telephone number:&lt;/label>
-        &lt;input id="tel" required aria-describedby="tel-error">
-        &lt;p class="error-message milli island-1-4 push-0" id="name-error">
-          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-          &lt;span class="icon-label">Please provide your telephone number&lt;/span>
-        &lt;/p>
-      &lt;/div>
-
-      &lt;div class="push">
-        &lt;label class="push-1-2" for="email">Your email address:&lt;/label>
-        &lt;input type="email" id="email" required aria-describedby="email-error">
-        &lt;p class="error-message milli island-1-4 push-0" id="email-error">
-          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-          &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
-        &lt;/p>
-      &lt;/div>
-
-      &lt;div class="push">
-        &lt;label class="push-1-2" for="address">Your current address (including postal code):&lt;/label>
-        &lt;input type="text" id="address" required aria-describedby="address-error">
-        &lt;p class="error-message milli island-1-4 push-0" id="address-error">
-          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-          &lt;span class="icon-label">Please enter your current address&lt;/span>
-        &lt;/p>
-      &lt;/div>
-
-      &lt;div class="push">
         &lt;label class="push-1-2" for="identify">You are the:&lt;/label>
         &lt;ul class="list-group-inline">
           &lt;li>
@@ -1100,6 +1073,83 @@
           &lt;span class="icon-label">Please identify if you are the applicant or respondant&lt;/span>
         &lt;/p>
       &lt;/div>
+
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="relation">Your relationship to the children:&lt;/label>
+        &lt;ul class="list-group-inline">
+          &lt;li>
+            &lt;input type="radio" name="relation" value="mother" id="mother" required>
+            &lt;label for="mother">Mother&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="radio" name="relation" value="father" id="father" required>
+            &lt;label for="father">Father&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="radio" name="relation" value="other" id="other" required>
+            &lt;label id="other-label" for="other">Other (Please specify)&lt;/label>
+            &lt;input aria-labelledby="other-label" type="text" name="relation-other" id="relation-other">
+          &lt;/li>
+        &lt;/ul>
+        &lt;p class="error-message milli island-1-4 push-0" id="relation-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please identify your relationship to the children&lt;/span>
+        &lt;/p>
+      &lt;/div>
+
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="address">Your current address (including postal code):&lt;/label>
+        &lt;input type="text" id="address" required aria-describedby="address-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="address-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please enter your current address&lt;/span>
+        &lt;/p>
+      &lt;/div>
+
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="tel">Your telephone number:&lt;/label>
+        &lt;input id="tel" required aria-describedby="tel-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="tel-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please provide your telephone number&lt;/span>
+        &lt;/p>
+      &lt;/div>
+
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="email">Your email address:&lt;/label>
+        &lt;input type="email" id="email" required aria-describedby="email-error">
+        &lt;p class="error-message milli island-1-4 push-0" id="email-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
+        &lt;/p>
+      &lt;/div>
+
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="law">Do you have a lawyer?:&lt;/label>
+        &lt;ul class="list-group-inline">
+          &lt;li>
+            &lt;input type="radio" name="law" value="yes" id="yes" required>
+            &lt;label for="yes">Yes&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="radio" name="law" value="no" id="no" required>
+            &lt;label for="no">No&lt;/label>
+          &lt;/li>
+        &lt;/ul>
+        &lt;p class="error-message milli island-1-4 push-0" id="law-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please identify if you have a lawyer or not&lt;/span>
+        &lt;/p>
+      &lt;/div>
+
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="lawyer-info">If you do have a lawyer, what is your lawyer&apos;s name, address, and telephone number?&lt;/label>
+        &lt;textarea id="lawyer-info" required aria-describedby="lawyer-info-error">&lt;/textarea>
+        &lt;p class="error-message milli island-1-4 push-0" id="lawyer-info-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please input a brief summary of your current realtionship with the other party&lt;/span>
+        &lt;/p>
+      &lt;/div>
     &lt;/div>
   &lt;/fieldset>
 
@@ -1109,11 +1159,69 @@
     &lt;/legend>
     &lt;div class="max-length gutter">
       &lt;div class="push">
-        &lt;label class="push-1-2" for="relationship">What is your current relationship with the other party in this matter?&lt;/label>
-        &lt;textarea id="relationship" required aria-describedby="relationship-error">&lt;/textarea>
-        &lt;p class="error-message milli island-1-4 push-0" id="address-error">
+        &lt;label class="push-1-2" for="lation">What is your current relationship to the other party in the court case?&lt;/label>
+        &lt;ul class="list-group-inline">
+          &lt;li>
+            &lt;input type="radio" name="lation" value="married" id="married" required>
+            &lt;label for="married">Married&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="radio" name="lation" value="divorced" id="divorced" required>
+            &lt;label for="divorced">Divorced&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="radio" name="lation" value="separated" id="separated" required>
+            &lt;label for="separated">Separated&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="radio" name="lation" value="none" id="none" required>
+            &lt;label for="none">Never lived together&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="radio" name="lation" value="other2" id="other2" required>
+            &lt;label id="other2-label" for="other2">Other (Please specify)&lt;/label>
+            &lt;input aria-labelledby="other2-label" type="text" name="lation-other2" id="lation-other2">
+          &lt;/li>
+        &lt;/ul>
+        &lt;p class="error-message milli island-1-4 push-0" id="lation-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please identify your relationship to the other party&lt;/span>
+        &lt;/p>
+      &lt;/div>
+
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="r-begin">When did your relationship begin?&lt;/label>
+        &lt;textarea id="r-being" required aria-describedby="r-begin-error">&lt;/textarea>
+        &lt;p class="error-message milli island-1-4 push-0" id="r-begin-error">
           &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
           &lt;span class="icon-label">Please input a brief summary of your current realtionship with the other party&lt;/span>
+        &lt;/p>
+      &lt;/div>
+
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="r-end">When did your relationship end?&lt;/label>
+        &lt;textarea id="r-end" required aria-describedby="r-end-error">&lt;/textarea>
+        &lt;p class="error-message milli island-1-4 push-0" id="r-end-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please input a brief summary of your current realtionship with the other party&lt;/span>
+        &lt;/p>
+      &lt;/div>
+
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="law">Are you and the other party currently living in the same house?:&lt;/label>
+        &lt;ul class="list-group-inline">
+          &lt;li>
+            &lt;input type="radio" name="law2" value="yes2" id="yes2" required>
+            &lt;label for="yes2">Yes&lt;/label>
+          &lt;/li>
+          &lt;li>
+            &lt;input type="radio" name="law2" value="no2" id="no2" required>
+            &lt;label for="no2">No&lt;/label>
+          &lt;/li>
+        &lt;/ul>
+        &lt;p class="error-message milli island-1-4 push-0" id="law2-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please identify if you are or aren&apos;t living with the other party&lt;/span>
         &lt;/p>
       &lt;/div>
     &lt;/div>
@@ -1124,6 +1232,24 @@
       &lt;div class="gutter max-length">Describe the issues in the dispute with the other party&lt;/div>
     &lt;/legend>
     &lt;div class="max-length gutter">
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="parent-info">What are the current parenting arrangements (please specify)?&lt;/label>
+        &lt;textarea id="parent-info" required aria-describedby="parent-info-error">&lt;/textarea>
+        &lt;p class="error-message milli island-1-4 push-0" id="parent-info-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please specify the current parenting arrangement&lt;/span>
+        &lt;/p>
+      &lt;/div>
+
+      &lt;div class="push">
+        &lt;label class="push-1-2" for="parent-con">What are some concerns about the current parenting arrangements?&lt;/label>
+        &lt;textarea id="parent-con" required aria-describedby="parent-con-error">&lt;/textarea>
+        &lt;p class="error-message milli island-1-4 push-0" id="parent-con-error">
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Please specify any and all parenting arrangement concerns&lt;/span>
+        &lt;/p>
+      &lt;/div>
+
       &lt;div class="push">
         &lt;label class="push-1-2" for="court">What is the nature of the next court appearance?&lt;/label>
         &lt;ul class="list-group-inline">
@@ -1165,8 +1291,8 @@
         &lt;div class="child-group">
           &lt;div class="push">
             &lt;label class="push-1-2" for="name">Your child&apos;s full legal name:&lt;/label>
-            &lt;input id="name[]" required aria-describedby="name-error">
-            &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+            &lt;input id="name[]" required aria-describedby="childname-error">
+            &lt;p class="error-message milli island-1-4 push-0" id="childname-error">
               &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
               &lt;span class="icon-label">Please provide your child&apos;s full legal name&lt;/span>
             &lt;/p>
@@ -1249,11 +1375,11 @@
                   &lt;option value="2017">2017&lt;/option>
                 &lt;/select>
               &lt;/li>
-              &lt;p class="error-message milli island-1-4 push-0" id="date-error">
-                &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
-                &lt;span class="icon-label">One or more fields weren&apos;t selected&lt;/span>
-              &lt;/p>
             &lt;/ul>
+            &lt;p class="error-message milli island-1-4 push-0" id="date-error">
+              &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+              &lt;span class="icon-label">One or more fields weren&apos;t selected&lt;/span>
+            &lt;/p>
           &lt;/div>
         &lt;/div>
       &lt;/div>
@@ -1271,7 +1397,7 @@
   &lt;div class="max-length gutter">
     &lt;div class="push-1-2">
       &lt;input type="checkbox" id="agree" required aria-describedby="agree-error">
-      &lt;label for="agree">I agree that the information I have provided is truthful and will be used as a method to get in contact with Karen Douglas&lt;/label>
+      &lt;label for="agree">I certify that I have reviewed the contents of this form and that the information is accurate and true.&lt;/label>
       &lt;p class="error-message milli island-1-4 push-0" id="agree-error">
         &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
         &lt;span class="icon-label">Please agree that the information is truthful and may be used by Karen Douglas&lt;/span>
@@ -1283,6 +1409,10 @@
     &lt;button class="btn" type="submit">Submit&lt;/button>
   &lt;/div>
 &lt;/form>
+
+&lt;footer>
+  &lt;p class="text-center island-1-2 micro">Copyright &#xA9; 2017 by Hannah Douglas. All rights reserved.&lt;/p>
+&lt;/footer>
 </pre></code>
             </div>
           </div>

@@ -34,9 +34,44 @@
         </div>
 
         <div class="push">
+          <label class="push-1-2" for="identify">You are the:</label>
+          <ul class="list-group-inline">
+            <li><input type="radio" name="identify" value="applicant" id="applicant" required><label for="applicant">Applicant</label></li>
+            <li><input type="radio" name="identify" value="respondant" id="respondant" required><label for="respondant">Respondant</label></li>
+          </ul>
+          <p class="error-message milli island-1-4 push-0" id="identify-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please identify if you are the applicant or respondant</span>
+          </p>
+        </div>
+
+        <div class="push">
+          <label class="push-1-2" for="relation">Your relationship to the children:</label>
+          <ul class="list-group-inline">
+            <li><input type="radio" name="relation" value="mother" id="mother" required><label for="mother">Mother</label></li>
+            <li><input type="radio" name="relation" value="father" id="father" required><label for="father">Father</label></li>
+            <li><input type="radio" name="relation" value="other" id="other" required><label id ="other-label" for="other">Other (Please specify)</label>
+              <input aria-labelledby="other-label" type="text" name="relation-other" id="relation-other"></li>
+          </ul>
+          <p class="error-message milli island-1-4 push-0" id="relation-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please identify your relationship to the children</span>
+          </p>
+        </div>
+
+        <div class="push">
+          <label class="push-1-2" for="address">Your current address (including postal code):</label>
+          <input type="text" id="address" required aria-describedby="address-error">
+          <p class="error-message milli island-1-4 push-0" id="address-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please enter your current address</span>
+          </p>
+        </div>
+
+        <div class="push">
           <label class="push-1-2" for="tel">Your telephone number:</label>
           <input id="tel" required aria-describedby="tel-error">
-          <p class="error-message milli island-1-4 push-0" id="name-error">
+          <p class="error-message milli island-1-4 push-0" id="tel-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please provide your telephone number</span>
           </p>
@@ -52,23 +87,23 @@
         </div>
 
         <div class="push">
-          <label class="push-1-2" for="address">Your current address (including postal code):</label>
-          <input type="text" id="address" required aria-describedby="address-error">
-          <p class="error-message milli island-1-4 push-0" id="address-error">
+          <label class="push-1-2" for="law">Do you have a lawyer?:</label>
+          <ul class="list-group-inline">
+            <li><input type="radio" name="law" value="yes" id="yes" required><label for="yes">Yes</label></li>
+            <li><input type="radio" name="law" value="no" id="no" required><label for="no">No</label></li>
+          </ul>
+          <p class="error-message milli island-1-4 push-0" id="law-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-            <span class="icon-label">Please enter your current address</span>
+            <span class="icon-label">Please identify if you have a lawyer or not</span>
           </p>
         </div>
 
         <div class="push">
-          <label class="push-1-2" for="identify">You are the:</label>
-          <ul class="list-group-inline">
-            <li><input type="radio" name="identify" value="applicant" id="applicant" required><label for="applicant">Applicant</label></li>
-            <li><input type="radio" name="identify" value="respondant" id="respondant" required><label for="respondant">Respondant</label></li>
-          </ul>
-          <p class="error-message milli island-1-4 push-0" id="identify-error">
+          <label class="push-1-2" for="lawyer-info">If you do have a lawyer, what is your lawyer's name, address, and telephone number?</label>
+          <textarea id="lawyer-info" required aria-describedby="lawyer-info-error"></textarea>
+          <p class="error-message milli island-1-4 push-0" id="lawyer-info-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-            <span class="icon-label">Please identify if you are the applicant or respondant</span>
+            <span class="icon-label">Please input a brief summary of your current realtionship with the other party</span>
           </p>
         </div>
       </div>
@@ -78,11 +113,48 @@
       <legend class="pad-t pad-b push"><div class="gutter max-length">Describe your relationship with the other party</div></legend>
       <div class="max-length gutter">
         <div class="push">
-          <label class="push-1-2" for="relationship">What is your current relationship with the other party in this matter?</label>
-          <textarea id="relationship" required aria-describedby="relationship-error"></textarea>
-          <p class="error-message milli island-1-4 push-0" id="address-error">
+          <label class="push-1-2" for="lation">What is your current relationship to the other party in the court case?</label>
+          <ul class="list-group-inline">
+            <li><input type="radio" name="lation" value="married" id="married" required><label for="married">Married</label></li>
+            <li><input type="radio" name="lation" value="divorced" id="divorced" required><label for="divorced">Divorced</label></li>
+            <li><input type="radio" name="lation" value="separated" id="separated" required><label for="separated">Separated</label></li>
+            <li><input type="radio" name="lation" value="none" id="none" required><label for="none">Never lived together</label></li>
+            <li><input type="radio" name="lation" value="other2" id="other2" required><label id ="other2-label" for="other2">Other (Please specify)</label>
+              <input aria-labelledby="other2-label" type="text" name="lation-other2" id="lation-other2"></li>
+          </ul>
+          <p class="error-message milli island-1-4 push-0" id="lation-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please identify your relationship to the other party</span>
+          </p>
+        </div>
+
+        <div class="push">
+          <label class="push-1-2" for="r-begin">When did your relationship begin?</label>
+          <textarea id="r-being" required aria-describedby="r-begin-error"></textarea>
+          <p class="error-message milli island-1-4 push-0" id="r-begin-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please input a brief summary of your current realtionship with the other party</span>
+          </p>
+        </div>
+
+        <div class="push">
+          <label class="push-1-2" for="r-end">When did your relationship end?</label>
+          <textarea id="r-end" required aria-describedby="r-end-error"></textarea>
+          <p class="error-message milli island-1-4 push-0" id="r-end-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please input a brief summary of your current realtionship with the other party</span>
+          </p>
+        </div>
+
+        <div class="push">
+          <label class="push-1-2" for="law">Are you and the other party currently living in the same house?:</label>
+          <ul class="list-group-inline">
+            <li><input type="radio" name="law2" value="yes2" id="yes2" required><label for="yes2">Yes</label></li>
+            <li><input type="radio" name="law2" value="no2" id="no2" required><label for="no2">No</label></li>
+          </ul>
+          <p class="error-message milli island-1-4 push-0" id="law2-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please identify if you are or aren't living with the other party</span>
           </p>
         </div>
       </div>
@@ -91,6 +163,24 @@
     <fieldset class="push-0 require-1">
       <legend class="pad-t pad-b push"><div class="gutter max-length">Describe the issues in the dispute with the other party</div></legend>
       <div class="max-length gutter">
+        <div class="push">
+          <label class="push-1-2" for="parent-info">What are the current parenting arrangements (please specify)?</label>
+          <textarea id="parent-info" required aria-describedby="parent-info-error"></textarea>
+          <p class="error-message milli island-1-4 push-0" id="parent-info-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please specify the current parenting arrangement</span>
+          </p>
+        </div>
+
+        <div class="push">
+          <label class="push-1-2" for="parent-con">What are some concerns about the current parenting arrangements?</label>
+          <textarea id="parent-con" required aria-describedby="parent-con-error"></textarea>
+          <p class="error-message milli island-1-4 push-0" id="parent-con-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please specify any and all parenting arrangement concerns</span>
+          </p>
+        </div>
+
         <div class="push">
           <label class="push-1-2" for="court">What is the nature of the next court appearance?</label>
           <ul class="list-group-inline">
@@ -115,8 +205,8 @@
           <div class="child-group">
         <div class="push">
           <label class="push-1-2" for="name">Your child's full legal name:</label>
-          <input id="name[]" required aria-describedby="name-error">
-          <p class="error-message milli island-1-4 push-0" id="name-error">
+          <input id="name[]" required aria-describedby="childname-error">
+          <p class="error-message milli island-1-4 push-0" id="childname-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please provide your child's full legal name</span>
           </p>
@@ -193,6 +283,7 @@
               <option value="2016">2016</option>
               <option value="2017">2017</option>
             </select></li>
+          </ul>
           <p class="error-message milli island-1-4 push-0" id="date-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">One or more fields weren't selected</span>
@@ -214,7 +305,7 @@
     <div class="max-length gutter">
       <div class="push-1-2">
         <input type="checkbox" id="agree" required aria-describedby="agree-error">
-        <label for="agree">I agree that the information I have provided is truthful and will be used as a method to get in contact with Karen Douglas</label>
+        <label for="agree">I certify that I have reviewed the contents of this form and that the information is accurate and true.</label>
         <p class="error-message milli island-1-4 push-0" id="agree-error">
           <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
           <span class="icon-label">Please agree that the information is truthful and may be used by Karen Douglas</span>
@@ -226,6 +317,10 @@
       <button class="btn" type="submit">Submit</button>
     </div>
   </form>
+
+  <footer>
+    <p class="text-center island-1-2 micro">Copyright © 2017 by Hannah Douglas. All rights reserved.</p>
+  </footer>
 
   <script>
   var newChild = document.getElementById ("new-child");
@@ -264,6 +359,20 @@
       }
     });
   </script>
+
+  <script>
+    var otherinput = document.getElementById("relation-other");
+    var otherinput = document.getElementById("lation-other2");
+    var other = document.getElementById("other");
+    var other = document.getElementById("other2");
+    other.addEventListener ("change", function (){
+      otherinput.required = this.checked;
+    })
+    other2.addEventListener ("change", function (){
+      other2input.required = this.checked;
+    })
+  </script>
+
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
   <script src="../../common/typekit.js"></script>
 </body>
