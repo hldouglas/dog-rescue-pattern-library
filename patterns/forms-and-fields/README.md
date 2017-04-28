@@ -1,5 +1,5 @@
 ---
-forms and fields: |
+forms-and-fields: |
   The forms and fields section should be applied to the form page.
 ---
 
