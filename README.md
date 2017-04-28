@@ -7,18 +7,18 @@ fonts:
   primary: |
     The primary typeface represents a modern and approachable look for the company's image.
 
-    Use the primary typeface for headings, navigation, and buttons
+    Use the primary typeface for headings, navigation, links, legends, and buttons.
   secondary: |
     The secondary typeface is a serif that is part of the primary font's family, creating a strong unison between the two.
 
-    The secondary typeface should be used for body copy, footers, and form information.
+    The secondary typeface should be used for body copy, footers, list items, and form information.
 colors:
   primary: |
     The primary colour is related back to the logo to unify the company's image.
   secondary: |
-    The secondary colour is also related back to the logo as well.
+    The secondary colour is to used break up information as the purple, black and white are to be used the most frequently.
   accent: |
-    The accent colour breaks up the neutral grayscale to highlight important information for the user to focus on. Hovering over buttons and cards
+    The accent colour breaks up the neutral grayscale to highlight important information for the user to focus on. Hovering over buttons and cards. It also relates back to the logo for unification.
 ---
 
 Karen Douglas Bio
